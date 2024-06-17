@@ -1,7 +1,5 @@
-let tasks = ['Buy groceries', 'Reply to emails', 'Write report', 'Exercise'];
+const books = ['Harry Potter', 'The Little Prince', 'The Hobbit'];
 
-console.log('Your tasks', tasks);
+const bookName = prompt('What book?');
 
-const task = prompt('Which task you want to remove?');
-
-const removeTaskByName = (taskName: string) => {};
+console.log('User entered', bookName);
