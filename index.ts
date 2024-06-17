@@ -2,7 +2,7 @@
 // What array is?
 
 // Step 2: Creating Arrays
-// const arr = ["vanya", "artem", "alex"]
+const arr = ['vanya', 'artem', 'alex'];
 
 // Step 3: Accessing Array Elements
 // Indexes are important because they allow you to retrieve and modify specific items in the array. They're like the address of each item in the list, helping you keep track of where everything is.
@@ -12,9 +12,9 @@
 // So, if you have an array like [10, 20, 30, 40, 50], the number 10 is at index 0, 20 is at index 1, and so on. You can access these items by using their indexes like this: array[0] would give you 10, array[1] would give you 20, and so forth.
 
 //           0   1   2   3   4
-const arr = [10, 20, 30, 40, 50];
+// const arr = [10, 20, 30, 40, 50];
 
-const thirdEl = arr[2];
+// const thirdEl = arr[2];
 
 // Step 4: Array Length
 
