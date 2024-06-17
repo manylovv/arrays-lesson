@@ -1,8 +1,7 @@
-//                0        1        2       3        4
-const names = ['vanya', 'artem', 'alex', 'anton', 'masha']; // length 5
+let tasks = ['Buy groceries', 'Reply to emails', 'Write report', 'Exercise'];
 
-for (let index = 0; index <= names.length; index++) {
-  const element = names[index];
+console.log('Your tasks', tasks);
 
-  console.log(index, ':', element);
-}
+const task = prompt('Which task you want to remove?');
+
+const removeTaskByName = (taskName: string) => {};
