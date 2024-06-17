@@ -1,6 +1,5 @@
-const books = ['Harry Potter', 'The Little Prince', 'The Hobbit'];
-console.log('Books in library', books);
+const numbers = [2, 342, 4102, 4953, 320];
 
-const bookName = prompt('What book?');
-
-console.log('User entered', bookName);
+const calculateSum = (array: number[]) => {
+  // write your solution here
+};
