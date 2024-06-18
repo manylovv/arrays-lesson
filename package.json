@@ -6,7 +6,7 @@
     "bun-types": "latest"
   },
   "scripts": {
-    "dev": "bun run homework.js"
+    "dev": "bun run src/todos.js"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

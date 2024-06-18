@@ -1,14 +1,14 @@
 const todos = [
   {
-    title: 'Wash dishes',
+    title: "Wash dishes",
     done: false,
   },
   {
-    title: 'Read a book',
+    title: "Read a book",
     done: false,
   },
   {
-    title: 'Go to the walk',
+    title: "Go to the walk",
     done: true,
   },
 ];
@@ -26,6 +26,14 @@ const completeTask = (taskTitle) => {
 };
 
 const listAllTasks = () => {
+  for (let i = 0; i < todos.length; i++) {
+    const task = todos[i];
+    if (task.done) {
+      console.log("✅", task.title);
+    } else {
+      console.log("-", task.title);
+    }
+  }
   // write your solution here
   // list tasks one by one
   // if the task is done print
@@ -42,11 +50,11 @@ const listOnlyDoneTasks = () => {
 
 listAllTasks();
 
-addTask('Play with my dog');
-removeTask('Read a book');
+addTask("Play with my dog");
+removeTask("Read a book");
 
-listAllTasks();
+// listAllTasks();
 
-completeTask('Play with my dog');
+completeTask("Play with my dog");
 
 listOnlyDoneTasks();
