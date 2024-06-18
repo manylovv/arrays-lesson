@@ -5,6 +5,9 @@
   "devDependencies": {
     "bun-types": "latest"
   },
+  "scripts": {
+    "dev": "bun run homework.js"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
