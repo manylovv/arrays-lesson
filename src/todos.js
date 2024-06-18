@@ -13,7 +13,7 @@ const todos = [
   },
 ];
 
-const addTask = (newTask) => {
+const addTask = (taskTitle) => {
   // write your solution here
 };
 
@@ -37,3 +37,16 @@ const listAllTasks = () => {
 const listOnlyDoneTasks = () => {
   // list one by one, should list only if task is done
 };
+
+// --------- example:
+
+listAllTasks();
+
+addTask('Play with my dog');
+removeTask('Read a book');
+
+listAllTasks();
+
+completeTask('Play with my dog');
+
+listOnlyDoneTasks();
