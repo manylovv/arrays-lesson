@@ -21,62 +21,90 @@ newTask after update will look like that:
 
 const tasks = [
   {
-    title: 'Wash dishe',
+    title: "Wash dishe",
     done: false,
   },
   {
-    title: 'Read a book',
+    title: "Read a book",
     done: false,
   },
   {
-    title: 'Go to the walk',
+    title: "Go to the walk",
     done: true,
   },
 ];
 
+const newTask = {
+  title: "??? title",
+  done: false,
+};
+
 const addTask = (taskTitle) => {
+  tasks.push(taskTitle);
   // write your solution here
 };
+addTask(newTask);
+console.log(tasks);
 
-const removeTask = (taskTitle) => {
-  // write your solution here
-};
+// const removeTask = (taskTitle) => {
+//   for (let i = 0; i < tasks.length; i++) {
+//     const task = tasks[i];
+//     if (taskTitle === task.title) {
+//       tasks.pop(taskTitle);
+//       console.log(tasks);
+//     }
+//   }
+//   // write your solution here
+// };
 
-const completeTask = (taskTitle) => {
-  // write your solution here
-};
+// const completeTask = (taskTitle) => {
+//   // write your solution here
+// };
 
-const listAllTasks = () => {
-  for (let i = 0; i < tasks.length; i++) {
-    const task = tasks[i];
-    if (task.done) {
-      console.log('✅', task.title);
-    } else {
-      console.log('-', task.title);
-    }
-  }
-  // write your solution here
-  // list tasks one by one
-  // if the task is done print
-  //   "✅": "Task title"
-  // if not print
-  //   "-": "Task title"
-};
+// const listAllTasks = () => {
+//   for (let i = 0; i < tasks.length; i++) {
+//     const task = tasks[i];
+//     if (task.done) {
+//       console.log("✅", task.title);
+//     } else {
+//       console.log("-", task.title);
+//     }
+//   }
+//   // write your solution here
+//   // list tasks one by one
+//   // if the task is done print
+//   //   "✅": "Task title"
+//   // if not print
+//   //   "-": "Task title"
+// };
 
-const listOnlyDoneTasks = () => {
-  // list one by one, should list only if task is done
-  // "✅": "Task title"
-};
+// const listOnlyDoneTasks = () => {
+//   for (let i = 0; i < tasks.length; i++) {
+//     const doneTask = tasks[i];
+//     if (doneTask.done) {
+//       console.log("✅", doneTask.title);
+//     }
+//   }
+//   // list one by one, should list only if task is done
+//   // "✅": "Task title"
+// };
 
-const editTaskTitle = (taskTitle, updatedTaskTitle) => {
-  // write your solution here
-};
+// const editTaskTitle = (taskTitle, updatedTaskTitle) => {
+//   for (let i = 0; i < tasks.length; i++) {
+//     const task = tasks[i];
+//     if (taskTitle === task.title) {
+//       tasks.splice(task.title, 1, updatedTaskTitle);
+//       console.log(tasks);
+//     }
+//   }
+//   // write your solution here
+// };
 
 // --------- example:
 
-listAllTasks();
+// listAllTasks();
 
-addTask('Play with my dog');
+// addTask("Play with my dog");
 
 /* todos after adding task: 
 [
@@ -99,7 +127,7 @@ addTask('Play with my dog');
 ];
 */
 
-removeTask('Read a book');
+// removeTask("Read a book");
 
 /* todos after adding task: 
 [
@@ -118,7 +146,7 @@ removeTask('Read a book');
 ];
 */
 
-completeTask('Play with my dog');
+// completeTask("Play with my dog");
 
 /* todos after adding task: 
 [
@@ -137,10 +165,10 @@ completeTask('Play with my dog');
 ];
 */
 
-listOnlyDoneTasks();
+// listOnlyDoneTasks();
 
 // should print to the console
 // ✅: Go to the walk
 // ✅: Play with my dog
 
-editTaskTitle('Wash dishe', 'Wash dishes');
+// editTaskTitle("Wash dishe", "Wash dishes");
