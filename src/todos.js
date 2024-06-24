@@ -34,71 +34,82 @@ const tasks = [
   },
 ];
 
-const newTask = {
-  title: "??? title",
-  done: false,
-};
+console.log("Iniatial Tasks", tasks);
+console.log("-----------------------------------------");
 
 const addTask = (taskTitle) => {
-  tasks.push(taskTitle);
+  const newTask = {
+    title: taskTitle,
+    done: false,
+  };
+  tasks.push(newTask);
   // write your solution here
 };
-addTask(newTask);
-console.log(tasks);
 
-// const removeTask = (taskTitle) => {
-//   for (let i = 0; i < tasks.length; i++) {
-//     const task = tasks[i];
-//     if (taskTitle === task.title) {
-//       tasks.pop(taskTitle);
-//       console.log(tasks);
-//     }
-//   }
-//   // write your solution here
-// };
+const removeTask = (taskTitle) => {
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+    if (taskTitle === task.title) {
+      tasks.splice(i, 1);
+    }
+  }
+  // write your solution here
+};
+// removeTask("Read a book");
+// console.log(tasks);
 
-// const completeTask = (taskTitle) => {
-//   // write your solution here
-// };
+const completeTask = (taskTitle) => {
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+    if (taskTitle === task.title) {
+      task.done = true;
+    }
+  }
+  // write your solution here
+};
+// completeTask("Read a book");
+// console.log(tasks);
 
-// const listAllTasks = () => {
-//   for (let i = 0; i < tasks.length; i++) {
-//     const task = tasks[i];
-//     if (task.done) {
-//       console.log("✅", task.title);
-//     } else {
-//       console.log("-", task.title);
-//     }
-//   }
-//   // write your solution here
-//   // list tasks one by one
-//   // if the task is done print
-//   //   "✅": "Task title"
-//   // if not print
-//   //   "-": "Task title"
-// };
+const listAllTasks = () => {
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+    if (task.done) {
+      console.log("✅", task.title);
+    } else {
+      console.log("-", task.title);
+    }
+  }
+  // write your solution here
+  // list tasks one by one
+  // if the task is done print
+  //   "✅": "Task title"
+  // if not print
+  //   "-": "Task title"
+};
 
-// const listOnlyDoneTasks = () => {
-//   for (let i = 0; i < tasks.length; i++) {
-//     const doneTask = tasks[i];
-//     if (doneTask.done) {
-//       console.log("✅", doneTask.title);
-//     }
-//   }
-//   // list one by one, should list only if task is done
-//   // "✅": "Task title"
-// };
+const listOnlyDoneTasks = () => {
+  for (let i = 0; i < tasks.length; i++) {
+    const doneTask = tasks[i];
+    if (doneTask.done) {
+      console.log("✅", doneTask.title);
+    }
+  }
+  // list one by one, should list only if task is done
+  // "✅": "Task title"
+};
 
-// const editTaskTitle = (taskTitle, updatedTaskTitle) => {
-//   for (let i = 0; i < tasks.length; i++) {
-//     const task = tasks[i];
-//     if (taskTitle === task.title) {
-//       tasks.splice(task.title, 1, updatedTaskTitle);
-//       console.log(tasks);
-//     }
-//   }
-//   // write your solution here
-// };
+const editTaskTitle = (taskTitle, updatedTaskTitle) => {
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+    if (taskTitle === task.title) {
+      task.title = updatedTaskTitle;
+      console.log(task);
+    }
+  }
+  // write your solution here
+};
+// editTaskTitle("Read a book", "rere");
+// console.log(tasks);
 
 // --------- example:
 
@@ -146,8 +157,6 @@ console.log(tasks);
 ];
 */
 
-// completeTask("Play with my dog");
-
 /* todos after adding task: 
 [
   {
@@ -170,5 +179,3 @@ console.log(tasks);
 // should print to the console
 // ✅: Go to the walk
 // ✅: Play with my dog
-
-// editTaskTitle("Wash dishe", "Wash dishes");
